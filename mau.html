@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LARQ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{
+margin:0;
+padding:0;
+}
+ul,img{
+background-color:white;
+color:black;
+padding:20px;
+}
+.navbar{
+display:flex;
+align-items:center;
+}
+.navbar li{
+margin-right:20px;
+}
+li{
+display:inline;
+padding:30px;
+}
+img{
+width:60px;
+height:20px;
+}
+.image-container{
+width:100vw;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:hidden;
+}
+.image-container img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+.text-overlay{
+position:absolute;
+top:75%;
+left:25%;
+transform:translate(-50%,-50%);
+text-align:center;
+}
+.text-overlay img{
+position:absolute;
+top:80%;
+left:200%;
+width:160px;
+height:190px;
+border:1px solid #ccc;
+border-radius:20px;
+transform:translate(-50%,-50%);
+}
+.text-overlay h3{
+font-size:20px;
+top:90%;
+left:400%;
+}
+.text-overlay h1{
+font-size:70px;
+text-align:20%;
+color:#ffffff;
+font-family:"Roboto",sans-serif;
+}
+.text-overlay p{
+font-size:20px;
+color:#ffffff;
+font-family:"Montserrat",sans-serif;
+}
+.text-overlay button{
+padding:10px 20px;
+font-size:16px;
+color:black;
+background-color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+font-family:"Open sans",sans-serif;
+box-shadow:0px 2px 4px rgba(0,0,0,0.2);
+}
+.text-overlay button:hover{
+background-color:#166fe5;
+}
+.rating-section{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:20px;
+}
+.rating-description h2{
+margin-left:30%;
+margin-bottom:15px;
+font-size:65px;
+font-weight:bold;
+}
+.rating-stars{
+margin-left:30%;
+color:gold;
+font-size:24px;
+}
+.rating-section{
+display:flex;
+align-items:center;
+}
+.rating-section p{
+margin-left:30%;
+margin-bottom:0;
+font-size:30px;
+}
+.all-reviews-button{
+margin-right:10%;
+padding:10px 20px;
+font-size:25px;
+color:#fff;
+background-color:#007bff;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+.all-reviews-button:hover{
+background-color:#0056b3;
+}
+.horizondal-line{
+border:none;
+border-top:1px solid #ccc;
+margin:20px 0;
+margin-left:4%;
+margin-right:4%;
+}
+.shop-section{
+text-align:center;
+}
+.shop-heading{
+text-align:left;
+margin-left:3%;
+font-size:50px;
+font-weight:bold;
+}
+.photo-container{
+display:inline-block;
+margin:20px;
+}
+.photo-container img{
+width:350px;
+height:auto;
+display:block;
+margin:0 auto 10px;
+border:1px solid #ccc;
+border-radius:20px;
+}
+.photo-container  p{
+margin-bottom:5px;
+font-size:30px;
+}
+.shop-now-link{
+display:block;
+background-color:#007bff;
+color:#fff;
+padding:10px 20px;
+text-decoration:none;
+border-radius:5px;
+}
+.shop-now-link:hover{
+bachground-color:#0056b3;
+}
+.text-section{
+display:flex;
+justify-content:space-around;
+background-color: #ffc0cb;
+ 
+color:#153A5B
+padding:10px 0;
+max-width:100%;
+max_height:100px;
+margin-left:5%;
+margin-right:5%;
+border:1px solid #ccc;
+border-radius:20px;
+}
+.text-block {
+  
+width:200px; 
+
+text-align:center;
+}
+.text-block h3 {
+  
+margin-bottom: 5px;
+font-size:20pz
+ 
+}
+.view-section{
+text-align:center;
+}
+.view-heading{
+text-align:left;
+margin-left:2%;
+font-size:50px;
+font-weight:bold;
+}
+.photo-container{
+display:inline-block;
+margin:10px;
+}
+.photo-container img{
+width:350px;
+height:auto;
+display:block;
+margin:0 auto 10px;
+border:1px solid #ccc;
+border-radius:20px;
+}
+.photo-container  p{
+margin-bottom:5px;
+font-size:20px;
+}
+.footer{
+background-color:#f8f9fa;
+padding:20px;
+text-align:center;
+}
+.footet-links{
+display:flex;
+justify-content:center;
+}
+.footer-links a{
+margin:0 10px;
+text-decoration:none;
+color:#333;
+}
+.footer-links a:hover{
+text-decoration:underline;
+}
+.encode-sans-semi-expanded-thin {
+  font-family: "Encode Sans Semi Expanded", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+</style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li>SHOP ALL</li>
+        <li>PURIFICATION</li>
+        <li>HOME</li>
+        <li>DRINKWARE</li>
+        <li><img src="https://asset.brandfetch.io/idRHYhaL0M/idH-YeXwnV.png" ></li>
+        <li>TECHNOLOGY</li>
+        <li>FAQ</li>
+        <li><img src="https://img.icons8.com/?size=67&id=fOGp9FxqqfYu&format=png&color=1A1A1A"></li>
+        <li>🛒</li>
+      </ul>
+    </nav>
+    <div class="image-container">
+    <img src="data:image/jpeg;base64,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">
+     </div>
+     <div class="text-overlay">
+     <h1>20% off on Nano <br>Zero Collection</h1>
+<br><br><br><br>
+     <p>Subscribe and save on LARQ Bottle Filtered or LARQ Pitcher <br><br>PureVis™ with a filter plan.</p>
+
+<br><br><br><br><br>     <button>Shop now</button>
+</div><br><br><br><br>
+<hr class="horizondal-line"><br>
+      <div class="rating-section">
+         <div class="rating-description">
+         <h2>Brilliant</h2>
+         <div class="rating-stars">
+          ⭐⭐⭐⭐⭐<br><br>
+         </div>
+         <p>Based on 11391 reviews</p>
+</div>
+         <button class="all-reviews-button">All Reviews</button>
+</div><br>
+<hr class="horizondal-line"><br>
+       <div class="shop-section">
+       <h2 class="shop-heading">Shop</h2>
+       <div class="photo-container">
+       <img src="https://res.cloudinary.com/larq/image/upload/q_auto,f_auto/v1692781791/Homepage-v3/Navigation/update/purification-big.jpg">
+       <p>Purification</p><br><br>
+       <a href="#" class="shop-now-link">Shop Now</a>
+</div>
+       <div class="photo-container">
+       <img src="https://res.cloudinary.com/larq/image/upload/q_auto,f_auto/v1692781790/Homepage-v3/Navigation/update/home-big.jpg">
+       <p>Home</p><br><br>
+       <a href="#" class="shop-now-link">Shop Now</a>
+</div>
+       <div class="photo-container">
+       <img src="https://res.cloudinary.com/larq/image/upload/q_auto,f_auto/v1692781790/Homepage-v3/Navigation/update/drinkware-big-us.jpg">
+       <p>Drinkware</p><br><br>
+       <a href="#" class="shop-now-link">Shop Now</a>
+</div>
+</div><br><br><br><br>
+<div class="splitter"></div>
+  <div class="text-section">
+  <div class="text-block"><br><br>
+    <h3>🔄<br><br>Say Yes to Refills</h3><br><br>
+    <p>Save money and make single-use water bottles a thing of the past.</p><br><br>
+  </div>
+  <div class="text-block"><br><br>
+    <h3>💧<br><br>A smart way to sip</h3><br><br>
+    <p>PureVis™ and Nano Zero technology improves water quality for a brilliant hydration experience on the go.</p><br><br>
+  </div>
+  <div class="text-block"><br><br>
+    <h3>🌱<br><br>Hydrate with purpose</h3><br><br>
+    <p>A portion of proceeds supports environmental and clean water projects worldwide.</p><br><br>
+  </div>
+</div><br><br>
+<div class="view-section">
+       <h2 class="view-heading">basq magazine</h2><br><br>
+       <div class="photo-container">
+       <img src="https://res.cloudinary.com/larq/image/upload/q_auto,f_auto/v1684876841/Homepage-v3/larq_pitcher_on_table.png"><br><br>
+       <p>I'm a nutritionist, and I only use filtered water.Here's why.</p><br>
+       <a href="#">Read More</a>
+</div>
+       <div class="photo-container">
+       <img src="https://res.cloudinary.com/larq/image/upload/q_auto,f_auto/v1684876924/Homepage-v3/New_york_view.png"><br><br>
+       <p>How clean is New York tap water?</p><br>
+       <a href="#">Read More</a>
+</div>
+       <div class="photo-container">
+       <img src="https://res.cloudinary.com/larq/image/upload/q_auto,f_auto/v1684876988/Homepage-v3/dished_with_food.png"><br><br>
+       <p>How to remove PFAS,PFOA,PFOS from tap water.</p><br>
+       <a href="#">Read More</a>
+</div>
+</div><br><br>
+     <footer class="footer">
+     <div class="footer-link">
+     <a href="#">Terms and Privacy</a>
+     <a href="#">Accessibility</a>
+     <a href="#">Contact</a>
+     <a href="#">Reviews</a>
+</div>
+</footer>
+</body>
+</html>
